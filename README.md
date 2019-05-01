@@ -1,19 +1,11 @@
-# ToDo
+# PRUEBA TÉCNICA FORCE MANAGER 
 
-ToDo
 
-* **8** DFFF
-* **6** FFFD
-* **5** AAE
-* **2** DDD
+#### INFORMACIÓN
 
-### Setup
+Este proyecto ha sido realizado por Luis I. Díaz Martínez.
 
-##### FMAPP
-
-Proyecto realizado por Luis I. Díaz Martínez
-
-##### Demostración del proyecto
+#### DEMOSTRACIÓN DEL PROYECTO
 
 El código empaquetado ha sido subido a 'firebase'. Para su visualización
 hará falta unicamente el siguiente enlace de demostración:
