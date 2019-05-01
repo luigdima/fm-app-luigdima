@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Polymer Starter Kit">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>FMAPP</title>
+    <meta name="description" content="FMAPP">
+
+    <base href="/">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- See https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#3f51b5">
+
+    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="FMAPP">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="FMAPP">
+
+    <!-- Homescreen icons -->
+    <link rel="apple-touch-icon" href="images/manifest/icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/manifest/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="images/manifest/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/manifest/icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="images/manifest/icon-192x192.png">
+
+    <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/manifest/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#3f51b5">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <script>
+      window.MainInitGlobals = { 
+        rootPath: '/',
+        apiData: {
+          credentials: {
+            username: "d61f7d2efc47f2c31ddec8fd1e4e512a0f1fe", 
+            password: "2ec6347d6c9ea6a8468cbfd2d9f1574abb85ee60874828ad66b24490a8e2219d4c553e7d1ddc6"
+          },
+          url: "https://apipre.forcemanager.net/api/v4",
+          token: ""
+        },
+        title: "EMPRESAS"
+      };
+
+      // Load and register pre-caching Service Worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js', {
+            scope: MainInitGlobals.rootPath
+          });
+        });
+      }
+    </script>
+
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="node_modules/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Load your application shell -->
+    <script type="module" src="src/login-on.js"></script>
+    
+    <!-- Add any global styles for body, document, etc. -->
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", "Noto", sans-serif;
+        line-height: 1.5;
+        min-height: 100vh;
+        background-color: #eeeeee;
+      }
+    </style>
+  </head>
+  <body> 
+    <login-on></login-on>
+    <noscript>
+      Please enable JavaScript to view this website.
+    </noscript>
+  </body>
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB1bKz_kY6ZR3U4K7VDL_8aHVWDB6yL4Lc",
+      authDomain: "fmapp-1556472407435.firebaseapp.com",
+      databaseURL: "https://fmapp-1556472407435.firebaseio.com",
+      projectId: "fmapp-1556472407435",
+      storageBucket: "fmapp-1556472407435.appspot.com",
+      messagingSenderId: "544130800932"
+    };
+    firebase.initializeApp(config);
+  </script>
+</html>
